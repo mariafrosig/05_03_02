@@ -1,0 +1,956 @@
+body {
+    background-color: #F1F2F3;
+}
+
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.hide {
+    visibility: hidden;
+}
+
+nav {
+    height: 100%;
+}
+
+/*---- GENERELT
+
+font-family: 'Lato', sans-serif;
+font-family: 'Barlow', sans-serif;
+
+GRØN: #024C43
+HVID: #F1F2F3
+MØRKELILLA: #282631
+ORANGE: #A34016
+
+
+---- GENERELT SLUT */
+
+/*------ INDEX ----- */
+
+.index_container {
+    display: grid;
+    grid-template-columns: 20vw 40vw 20vw;
+    grid-template-areas:
+
+        "left middle middle middle right"
+    ;
+
+    grid-template-rows: 100vh;
+
+}
+
+
+.index_container img {
+    width: 100%;
+
+}
+
+.index_left {
+    grid-area: left;
+    height: 100vh;
+    width: 100%;
+}
+
+.index_middle {
+    height: 100vh;
+    background: #024C43;
+    text-align: center;
+
+
+    grid-area: middle;
+}
+
+
+.index_middle img {
+    width: 60%;
+    margin-top: 12vw;
+
+}
+
+.index_right {
+    height: 100vh;
+    width: 200vh;
+    grid-area: right;
+}
+
+/*------ NAV ----- */
+
+
+
+.logo img {
+    width: 18vw;
+    padding: 4vw 2vw 2vw 2vw;
+    cursor: pointer;
+
+}
+
+.menu_desktop {
+    display: flex;
+    text-align: center;
+
+
+    flex-grow: 1;
+    flex-basis: 100px;
+
+
+
+    background-color: #024C43;
+    display: block;
+
+    background-size: 100%;
+    width: 25vw;
+    height: 100%;
+}
+
+.menu_text {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2vw;
+    cursor: pointer;
+    margin: 2vw auto;
+    padding-inline-start: 0px;
+
+
+}
+
+
+.menuknap {
+    display: inline-block;
+    font-size: 12vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu_mobil {
+    list-style-type: none;
+    display: none;
+
+}
+
+.menu_ipad {
+    display: none;
+}
+
+
+/*FORSIDE*/
+
+
+.container_forside {
+    top: 0;
+    flex-grow: 2;
+    flex-basis: 800px;
+
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+
+        "film film"
+        "citat citat"
+        "foto1 foto2"
+        "foto3 foto3"
+        "foto4 foto4"
+        "foto5 foto5"
+        "footer footer"
+    ;
+
+    grid-template-rows: 548px 450px 800px 700px 700px 700px 150px;
+}
+
+.film {
+    grid-area: film;
+    width: 100%;
+
+}
+
+
+
+.citat {
+    grid-area: citat;
+
+}
+
+.citat_container {
+    background-color: #282631;
+    height: 22vw;
+    width: 55vw;
+    margin: 2vw auto;
+
+    text-align: center;
+
+    position: relative;
+
+
+}
+
+.citat_tegn {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 9vw;
+    position: absolute;
+
+
+    top: 2vw;
+    left: 3vw;
+}
+
+.citat_text {
+    color: white;
+    width: 45vw;
+    left: 5.5vw;
+    top: 6vw;
+
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    position: absolute;
+
+}
+
+
+.foto1 {
+    grid-area: foto1;
+    margin: 2vw 3vw;
+}
+
+.foto2 {
+    grid-area: foto2;
+    margin: 2vw 3vw;
+}
+
+.foto3 {
+    grid-area: foto3;
+    margin: 2vw 3vw;
+}
+
+.foto4 {
+    grid-area: foto4;
+    margin: 2vw 3vw;
+}
+
+.foto5 {
+    grid-area: foto5;
+    margin: 2vw 3vw;
+}
+
+.footer {
+    grid-area: footer;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1vw;
+}
+
+.item img {
+    width: 100%;
+}
+
+
+/*
+.item {
+    border: 1px solid #000;
+    height: 400px;
+}
+*/
+
+
+/*----- MENU/WINE NAV ----*/
+
+
+
+.container_menu {
+    flex-grow: 2;
+    flex-basis: 800px;
+}
+
+.menu_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.vis {
+    background-color: white;
+    width: 30vw;
+    height: 30vw;
+
+    text-align: center;
+
+    align-items: center;
+    margin: 3vw;
+    box-shadow: 0px 0px 2px grey;
+
+}
+
+.vis h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 1.2vw;
+    font-size: 1.3vw;
+}
+
+
+
+.img_mad img {
+    width: 20vw;
+}
+
+.img_vin img {
+    width: 9vw;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.8vw;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    width: 20vw;
+    height: 4vw;
+    margin: 30px 20px;
+    background-color: #F1F2F3;
+}
+
+/*
+.valgt {
+    text-decoration: none;
+    color: black;
+}
+*/
+
+/*---- POP - UP -----*/
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.53);
+
+
+
+
+}
+
+.vis_pop_up {
+    background-color: white;
+    width: 60vw;
+    height: 50vh;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 3vw;
+    box-shadow: 0px 0px 2px grey;
+}
+
+
+.indhold {
+    margin: auto;
+    box-sizing: border-box;
+
+    width: 40vw;
+    height: 40vh;
+    margin-top: 15vw;
+}
+
+.vis_pop_up h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+
+}
+
+.vis_pop_up p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+}
+
+.pop_up_left_menu {
+    text-align: center;
+}
+
+.pop_up_left_vin {
+    text-align: center;
+}
+
+.pop_up_left_menu img {
+    width: 22vw;
+}
+
+.pop_up_left_vin img {
+    width: 14vw;
+}
+
+
+.pop_up_right {
+    padding: 3vw 6vw 3vw 3vw;
+}
+
+.luk img {
+    box-sizing: border-box;
+    width: 4vw;
+    box-shadow: 0px 0px 2px grey;
+    z-index: 2;
+    position: absolute;
+    left: 88vw;
+    top: 16vw;
+}
+
+
+/*----- CONTACT -----*/
+
+
+.container_contact {
+    flex-grow: 2;
+    flex-basis: 400px;
+
+
+
+    display: grid;
+    grid-template-columns: 37vw 37vw;
+    grid-template-areas:
+
+        "kasse1 kasse2"
+        "kasse3 kasse3"
+    ;
+
+    grid-template-rows: 400px 700px;
+}
+
+.info {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.kasse1 {
+    grid-area: kasse1;
+    margin: 5vw auto 1vw auto;
+}
+
+.kasse2 {
+    grid-area: kasse2;
+    margin: 5vw auto 1vw auto;
+}
+
+.kasse3 {
+    grid-area: kasse3;
+}
+
+
+
+.kasse3 img {
+    width: 90%;
+    padding: 4vw;
+}
+
+/*----- ANIMATIONER / EFFEKTER -------- */
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_in {
+    animation-name: fade_in;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*----- MEDIA QUERYS -------- */
+
+
+@media only screen and (max-width: 1024px) {
+
+
+
+    /*-- INDEX--- */
+
+    .index_container {
+        display: block;
+        grid-template-columns: ;
+        grid-template-areas: ;
+
+        grid-template-rows: 100vh;
+
+    }
+
+    .index_left {
+        display: none;
+
+    }
+
+    .index_middle {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .index_middle img {
+        margin-top: 40vw;
+    }
+
+
+
+    .index_right {
+        display: none;
+
+    }
+
+/*----- NAV ----*/
+
+
+
+.logo img {
+    width: 30vw;
+    padding: 4vw 2vw 2vw 2vw;
+    cursor: pointer;
+
+}
+
+    .menu_ipad {
+        display: block;
+
+        background-color: #024C43;
+
+        top: 0;
+        width: 100vw;
+        height: 30vw;
+    }
+.menu_desktop {
+    display: none;
+}
+
+.menu_text {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5vw;
+    cursor: pointer;
+    margin: 6vw 3vw;
+    float: right;
+}
+
+/*----- FORSIDE ----*/
+
+     .container_forside {
+        top: 0;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "film film"
+            "citat citat"
+            "foto1 foto2"
+            "foto3 foto3"
+            "foto4 foto4"
+            "foto5 foto5"
+            "footer footer"
+        ;
+
+        grid-template-rows: 500px 500px 700px 600px 600px 600px 20px;
+    }
+
+    .film {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+
+    .citat_container {
+        background-color: #282631;
+        height: 40vw;
+        width: 90vw;
+        margin: 5vw auto;
+
+        text-align: center;
+
+        position: relative;
+    }
+
+    .citat_tegn {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 17vw;
+        position: absolute;
+
+
+        top: 2vw;
+        left: 5vw;
+    }
+
+    .citat_text {
+        color: white;
+        width: 90%;
+        left: 5.5vw;
+        top: 12vw;
+
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 2vw;
+        position: absolute;
+
+    }
+
+    .footer p {
+        font-family: 'Lato', sans-serif;
+        font-size: 2vw;
+    }
+
+    /*--- MENU/WINE---*/
+
+      .menu_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .vis {
+        background-color: white;
+        width: 30vw;
+        height: 30vw;
+
+        text-align: center;
+
+        align-items: center;
+        margin: 3vw;
+        box-shadow: 0px 0px 2px grey;
+
+    }
+
+    .vis h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        padding: 1.2vw;
+        font-size: 1.3vw;
+    }
+
+
+
+    .img_mad img {
+        width: 20vw;
+    }
+
+    .img_vin img {
+        width: 9vw;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu button {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 2vw;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        width: 22vw;
+        height: 4vw;
+        margin: 30px 15px;
+        background-color: #F1F2F3;
+    }
+
+     /*--- CONTACT ---*/¨
+
+
+.container_contact {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+
+        "kasse1 kasse2"
+        "kasse3 kasse3"
+    ;
+
+    grid-template-rows: 500px 700px;
+}
+
+.info {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+.kasse1 {
+    grid-area: kasse1;
+    margin: 5vw auto 1vw auto;
+}
+
+.kasse2 {
+    grid-area: kasse2;
+    margin: 5vw auto 1vw auto;
+}
+
+.kasse3 {
+    grid-area: kasse3;
+}
+
+
+
+.kasse3 img {
+    width: 100%;
+    padding: 0 auto;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 414px) {
+
+    /*-- INDEX--- */
+
+    .index_container {
+        display: block;
+        grid-template-columns: ;
+        grid-template-areas: ;
+
+        grid-template-rows: 100vh;
+
+    }
+
+    .index_left {
+        display: none;
+
+    }
+
+    .index_middle {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .index_middle img {
+        margin-top: 40vw;
+    }
+
+
+
+    .index_right {
+        display: none;
+
+    }
+
+
+    /*---- NAV ----*/
+
+    .menuknap {
+        display: inline-block;
+        color: white;
+        font-size: 12vw;
+        font-family: 'Lato', sans-serif;
+
+        float: right;
+        padding: 2vw 5vw;
+    }
+
+    #logo img {
+        position: absolute;
+        width: 40vw;
+        padding: 4vw 2vw 2vw 8vw;
+        cursor: pointer;
+    }
+
+    .menu_skjult {
+        padding: 50vw 10vw;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        z-index: 5;
+
+
+    }
+
+    .burger_menu {
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 6;
+    }
+
+
+    .menu_skjult a {
+        padding: 2vw;
+        font-size: 8vw;
+        z-index: 7;
+
+    }
+
+
+    .menu_mobil {
+
+        display: block;
+        background-color: #024C43;
+
+        top: 0;
+        width: 100vw;
+        height: 40vw;
+
+    }
+
+    .menu_desktop {
+        display: none;
+    }
+
+    nav a {
+        font-size: 6vw;
+    }
+
+
+    /*---- FORSIDE ----*/
+
+
+
+    /*---- MENU ----*/
+
+
+
+    .menu_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .vis {
+        background-color: white;
+        width: 30vw;
+        height: 30vw;
+
+        text-align: center;
+
+        align-items: center;
+        margin: 3vw;
+        box-shadow: 0px 0px 2px grey;
+
+    }
+
+    .vis h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        padding: 1.2vw;
+        font-size: 1.3vw;
+    }
+
+
+
+    .img_mad img {
+        width: 20vw;
+    }
+
+    .img_vin img {
+        width: 9vw;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu button {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 4vw;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        width: 22vw;
+        height: 4vw;
+        margin: 30px 15px;
+        background-color: #F1F2F3;
+    }
+
+
+
+    /*---- CONTACT ----*/
+
+    .container_contact {
+        position: relative;
+        z-index: 0;
+        flex-grow: 2;
+        flex-basis: 800px;
+
+
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+
+            "kasse1"
+            "kasse2"
+            "kasse3"
+        ;
+
+        grid-template-rows: 150px 150px 100px;
+    }
+
+    .info {
+        font-family: 'Lato', sans-serif;
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .kasse1 {
+        grid-area: kasse1;
+        margin: 5vw;
+    }
+
+    .kasse2 {
+        grid-area: kasse2;
+        margin: 5vw;
+    }
+
+    .kasse3 {
+        grid-area: kasse3;
+    }
+
+
+
+    .kasse3 img {
+        width: 100%;
+        padding: 0vw;
+    }
+
+}
